@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: SpringCloud
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: false  # Since this is a Eureka server, it does not need to register with another Eureka server
+    fetch-registry: false  # Since this is a Eureka server, it does not need to fetch the registry from another server
+  server:
+    enable-self-preservation: false
